@@ -209,6 +209,12 @@ nav{
 	text-align: center;
 }
 
+.facts-icon:hover{
+	background-color: #FF900E;
+	transform: scale(1.1);
+	transition: transform 1s ease-in-out;
+}
+
 /* Sponsors Section CSS */
 .sponsors{
 	width: 80%;
