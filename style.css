@@ -18,6 +18,11 @@ body {
 	font-family: 'PT Serif', serif;
 	font-family: 'Roboto Slab', serif;
 }
+.brand-name{
+	font-weight: bold;
+	font-size: 32px;
+	cursor: pointer;
+}
 .brand-color{
 	color: #FF900E;
 	font-weight: bold;
@@ -28,6 +33,28 @@ body {
 .title-section{
 	width: 50%;
 	margin: 0 auto;
+}
+
+/* Navigation */
+nav{
+	background-color:rgba(255, 144, 14, 0.1);
+	padding-bottom: 80px;
+	padding-top: 20px;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.nav ul{
+	display: flex;
+	list-style: none;
+}
+.nav ul li{
+	padding: 15px;
+	cursor: pointer;
 }
 
 /* Banner Part Css */
@@ -204,6 +231,34 @@ body {
 	margin: 0 auto;
 }
 
+/* Contact Section */
+.contact{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	width: 80%;
+	margin: 50px auto;
+	justify-items: center;
+}
+.contact-title{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 32px;
+}
+.contact-img{
+	width: 80%;
+}
+.contact-img img{
+	width: 100%;
+}
+form input,textarea{
+	width: 350px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
 footer{
 	width: 80%;
 	margin: 20px auto;
@@ -215,6 +270,16 @@ footer{
 
 /* Media Query */
 @media only screen and (max-width: 600px){
+	/* Navigation */
+	.nav{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+	.nav ul{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+
 	.headline{
 		text-align: center;
 		font-size: 30px;
@@ -277,5 +342,14 @@ footer{
 	.sponsors-img{
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 25px;
+	}
+
+	/* Contact */
+	.contact{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	form input,textarea{
+		width: 270px;
 	}
 }
