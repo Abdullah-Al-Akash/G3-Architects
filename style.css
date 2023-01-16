@@ -16,6 +16,7 @@ body {
 }
 .brand-color{
 	color: #FF900E;
+	font-weight: bold;
 }
 .banner{
 	background-color: rgba(255, 144, 14, 0.1);;
@@ -43,6 +44,7 @@ body {
 	border: 2px solid #FF900E;
 	color: white;
 	cursor: pointer;
+	margin: 10px 0;
 }
 
 .banner-img{
@@ -55,10 +57,56 @@ body {
 	width: 100%;
 }
 
+/* Quick Section Features CSS */
+.feature-text{
+	margin-left: 20px;
+}
+.features{
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.quick{
+	color: #727272;
+	margin: 10px 0;
+}
+.of{
+	color: #131313;
+	font-weight: bold;
+}
+
+.feature-img{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.feature-img img{
+	width: 330px;
+	padding: 12px;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px){
 	.headline{
 		text-align: center;
 		font-size: 30px;
+	}
+
+	/* Feature Section */
+	.features{
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+	}
+	.feature-img{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+	}
+	.feature-img img{
+		width: 270px;
+		padding: 12px;
 	}
 }
