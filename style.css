@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab&display=swap');
+
+/* Setting the box-size border-box */
+
+* {
+        margin: 0;
+        padding: 0;
+	box-sizing: border-box;
+}
+
+/* Styling the body section */
+
+body {
+	font-family: 'PT Serif', serif;
+	font-family: 'Roboto Slab', serif;
+}
+.brand-color{
+	color: #FF900E;
+}
+.banner{
+	background-color: rgba(255, 144, 14, 0.1);;
+}
+.title-section{
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* Banner Part Css */
+.headline{
+	text-align: center;
+	font-size: 64px;
+}
+.btn{
+	text-align: center;
+	margin-top: 10px;
+}
+.brand-btn{
+	padding: 12px 20px;
+	background-color: #FF900E;
+	font-size: 20px;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 2px solid #FF900E;
+	color: white;
+	cursor: pointer;
+}
+
+.banner-img{
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px 0;
+}
+
+.banner-img img{
+	width: 100%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px){
+	.headline{
+		text-align: center;
+		font-size: 30px;
+	}
+}
