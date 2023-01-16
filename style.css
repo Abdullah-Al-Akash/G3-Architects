@@ -10,6 +10,10 @@
 
 /* Styling the body section */
 
+body p{
+	color: #727272;
+}
+
 body {
 	font-family: 'PT Serif', serif;
 	font-family: 'Roboto Slab', serif;
@@ -19,7 +23,7 @@ body {
 	font-weight: bold;
 }
 .banner{
-	background-color: rgba(255, 144, 14, 0.1);;
+	background-color: rgba(255, 144, 14, 0.1);
 }
 .title-section{
 	width: 50%;
@@ -50,7 +54,7 @@ body {
 .banner-img{
 	width: 80%;
 	margin: 20px auto;
-	padding: 20px 0;
+	padding: 60px 0;
 }
 
 .banner-img img{
@@ -63,7 +67,7 @@ body {
 }
 .features{
 	width: 80%;
-	margin: 0 auto;
+	margin: 80px auto;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
@@ -88,11 +92,10 @@ body {
 
 /* Feature Details Section: */
 .feature-details{
+	padding-top: 50px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-}
-.feature-details{
 	width: 80%;
 	margin: 60px auto;
 }
@@ -115,11 +118,69 @@ body {
 .feature-details-img{
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	margin-left: 50px;
 }
 .feature-details-img img{
-	width: 80%;
+	width: 90%;
+}
+.feature-des p{
+	margin: 10px 0;
 }
 
+/* Experience Button */
+.ex-btn{
+	width: 310px;
+	position: relative;
+	bottom: 100px;
+	right: 25px;
+}
+.ex-btn{
+	background-color: #FF900E;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.ex-btn h1{
+	font-size: 65px;
+	font-weight: 500;
+	padding-top: 10px;
+	color: white;
+}
+.ex-btn p{
+	padding-bottom: 20px;
+	font-size: 25px;
+	color: white;
+}
+
+/* Some Facts Section: */
+.facts{
+	width: 80%;
+	margin: 0 auto;
+}
+.facts h1{
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.facts p{
+	margin: 15px 0;
+}
+.facts-details{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 7%;
+	margin: 60px 0;
+}
+.facts-icon{
+	border: 2px solid #FF900E;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	justify-content:center;
+	text-align: center;
+}
 /* Media Query */
 @media only screen and (max-width: 600px){
 	.headline{
@@ -147,5 +208,30 @@ body {
 	/* Feature Details Section */
 	.feature-details{
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.ex-btn{
+		width: 150px;
+		position: relative;
+		bottom: 50px;
+		right: 15px;
+	}
+	.ex-btn h1{
+		font-size: 30px;
+		font-weight: 500;
+		padding-top: 10px;
+		color: white;
+	}
+	.ex-btn p{
+		padding-bottom: 20px;
+		font-size: 15px;
+		color: white;
+	}
+	.feature-details-img{
+		margin-top: 30px;
+	}
+
+	/* Facts Section: */
+	.facts h1{
+		font-size: 28px;
 	}
 }
